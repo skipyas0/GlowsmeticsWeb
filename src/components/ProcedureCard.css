@@ -1,0 +1,62 @@
+.procedure-card {
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  height: 100%;
+}
+
+.procedure-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.card-desc {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding-top: 1.5rem;
+}
+
+.card-price {
+  font-weight: 500;
+  color: var(--color-gold);
+}
+
+.card-link {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  transition: var(--transition-smooth);
+}
+
+.procedure-card:hover .card-link {
+  color: var(--color-gold);
+}

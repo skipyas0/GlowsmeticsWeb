@@ -1,0 +1,96 @@
+.procedures-page {
+  padding: 4rem 2rem;
+}
+
+.procedures-header {
+  margin-bottom: 4rem;
+}
+
+.procedures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* ProcedureDetail.css parts */
+.detail-hero {
+  background-color: var(--color-surface);
+  padding: 4rem 0 3rem;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.back-link:hover {
+  color: var(--color-gold);
+}
+
+.detail-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.detail-price {
+  font-size: 1.5rem;
+  color: var(--color-gold);
+  font-weight: 300;
+}
+
+.detail-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  padding: 4rem 2rem;
+}
+
+.detail-main {
+  padding: 3rem;
+  border-radius: 4px;
+}
+
+.detail-desc {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+}
+
+.sidebar-card {
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.sidebar-card h3 {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 1rem;
+}
+
+.info-section {
+  margin-bottom: 2rem;
+}
+
+.info-section:last-child {
+  margin-bottom: 0;
+}
+
+.info-section h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .detail-content {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .detail-title {
+    font-size: 2rem;
+  }
+}

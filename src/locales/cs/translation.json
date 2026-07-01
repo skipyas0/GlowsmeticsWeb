@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "about": "O nás",
+    "procedures": "Procedury",
+    "contact": "Kontakt",
+    "book_now": "Rezervovat"
+  },
+  "about": {
+    "title": "Vítejte v Glowsmetics",
+    "subtitle": "Profesionální péče o pleť s korejskou kosmetikou",
+    "description": "Věřím, že každá pleť je jedinečná a zaslouží si individuální péči. Mým cílem je vytvořit místo, kde se budete cítit příjemně, odpočinete si a odejdete nejen se zdravě a svěže působící pletí, ale i krásně upraveným obočím a řasami."
+  },
+  "procedures": {
+    "title": "Naše Služby",
+    "book_button": "Rezervovat termín",
+    "hydration_facial": {
+      "title": "Hydratační ošetření pleti",
+      "description": "Intenzivně hydratační kosmetické ošetření s profesionální korejskou kosmetikou. Je vhodné pro dehydratovanou, unavenou nebo mdlou pleť, které navrací potřebnou hydrataci, hebkost a přirozený jas. Použité produkty a jednotlivé kroky ošetření jsou vždy přizpůsobeny aktuálnímu stavu a potřebám pleti.",
+      "price": "1290 Kč"
+    },
+    "calm_restore_facial": {
+      "title": "Zklidňující ošetření pleti",
+      "description": "Jemné kosmetické ošetření s korejskou kosmetikou určené pro citlivou, podrážděnou nebo začervenalou pleť. Zaměřuje se na obnovu kožní bariéry, intenzivní zklidnění a hloubkovou hydrataci. Ideální také pro pleť se sklonem k citlivosti nebo po náročnější domácí péči. Použité produkty a jednotlivé kroky ošetření jsou vždy přizpůsobeny aktuálnímu stavu a potřebám pleti.",
+      "price": "1290 Kč"
+    },
+    "korean_glow_facial": {
+      "title": "Korean glow ošetření pleti",
+      "description": "Luxusní kosmetické ošetření inspirované korejskou filozofií péče o pleť. Kombinace profesionálních produktů, intenzivní hydratace a relaxační masáže podporuje zdravý, svěží a přirozeně rozzářený vzhled pleti. Ideální před důležitou událostí i jako pravidelná péče. Použité produkty a jednotlivé kroky ošetření jsou vždy přizpůsobeny aktuálnímu stavu a potřebám pleti.",
+      "price": "1490 Kč"
+    },
+    "brow_lamination_tint": {
+      "title": "Laminace obočí s barvením",
+      "description": "Dokonale upravené a nabarvené obočí, které krásně orámuje váš obličej.",
+      "price": "890 Kč"
+    },
+    "brow_lamination": {
+      "title": "Laminace obočí",
+      "description": "Dlouhotrvající úprava obočí pro plnější a přirozený vzhled.",
+      "price": "790 Kč"
+    },
+    "korean_lash_lift": {
+      "title": "Korejský lifting řas",
+      "description": "Šetrné natočení a zvýraznění přirozených řas pro otevřený a svěží pohled.",
+      "price": "990 Kč"
+    },
+    "brow_lamination_tint_lash_lift": {
+      "title": "Laminace obočí s barvením + Lifting řas",
+      "description": "Kompletní proměna pro vaše oči a obočí.",
+      "price": "1590 Kč"
+    },
+    "detail": {
+      "additional_info": "Doplňující informace",
+      "pre_care": "Před procedurou",
+      "post_care": "Po proceduře",
+      "contraindications": "Kontraindikace",
+      "placeholder": "Tyto informace budou brzy k dispozici."
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "location": "Kde nás najdete",
+    "address_label": "Adresa",
+    "address": "1258/6, Ve Smečkách, 110 00 Nové Město",
+    "contact": "Kontakt",
+    "phone": "+420 732 825 839",
+    "email": "info@glowsmetics.cz",
+    "hours": "Otevírací doba",
+    "hours_value": "Celý týden dle objednávek"
+  },
+  "footer": {
+    "rights": "Všechna práva vyhrazena."
+  }
+}

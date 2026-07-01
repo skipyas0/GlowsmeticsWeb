@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "about": "About",
+    "procedures": "Procedures",
+    "contact": "Contact",
+    "book_now": "Book Now"
+  },
+  "about": {
+    "title": "Welcome to Glowsmetics",
+    "subtitle": "Professional skincare with Korean cosmetics",
+    "description": "I believe every skin type is unique and deserves individual care. My goal is to create a place where you will feel comfortable, relax, and leave not only with healthy and fresh-looking skin but also beautifully styled brows and lashes."
+  },
+  "procedures": {
+    "title": "Our Services",
+    "book_button": "Book Appointment",
+    "hydration_facial": {
+      "title": "Hydration facial",
+      "description": "Intensively hydrating cosmetic treatment with professional Korean cosmetics. Suitable for dehydrated, tired, or dull skin, restoring necessary hydration, softness, and natural glow. The products used and individual steps of the treatment are always adapted to the current state and needs of the skin.",
+      "price": "1290 CZK"
+    },
+    "calm_restore_facial": {
+      "title": "Calm & Restore Facial",
+      "description": "Gentle cosmetic treatment with Korean cosmetics designed for sensitive, irritated, or reddened skin. It focuses on restoring the skin barrier, intensive soothing, and deep hydration. Ideal also for skin prone to sensitivity or after demanding home care. The products used and individual steps of the treatment are always adapted to the current state and needs of the skin.",
+      "price": "1290 CZK"
+    },
+    "korean_glow_facial": {
+      "title": "Korean glow facial",
+      "description": "Luxurious cosmetic treatment inspired by the Korean skincare philosophy. A combination of professional products, intensive hydration, and relaxing massage promotes a healthy, fresh, and naturally radiant appearance of the skin. Ideal before an important event or as regular care. The products used and individual steps of the treatment are always adapted to the current state and needs of the skin.",
+      "price": "1490 CZK"
+    },
+    "brow_lamination_tint": {
+      "title": "Brow Lamination with Tinting",
+      "description": "Perfectly styled and tinted brows that frame your face beautifully.",
+      "price": "890 CZK"
+    },
+    "brow_lamination": {
+      "title": "Brow Lamination",
+      "description": "Long-lasting brow styling for a fuller, natural look.",
+      "price": "790 CZK"
+    },
+    "korean_lash_lift": {
+      "title": "Korean Lash Lift",
+      "description": "Gentle lifting and curling of your natural lashes for an open, awakened look.",
+      "price": "990 CZK"
+    },
+    "brow_lamination_tint_lash_lift": {
+      "title": "Brow Lamination with Tinting + Lash Lift",
+      "description": "A complete makeover for your eyes and brows.",
+      "price": "1590 CZK"
+    },
+    "detail": {
+      "additional_info": "Additional Information",
+      "pre_care": "Pre-care Instructions",
+      "post_care": "Post-care Instructions",
+      "contraindications": "Contraindications",
+      "placeholder": "This information will be available soon."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "location": "Location",
+    "address_label": "Address",
+    "address": "1258/6, Ve Smečkách, 110 00 Nové Město",
+    "contact": "Contact",
+    "phone": "+420 732 825 839",
+    "email": "info@glowsmetics.cz",
+    "hours": "Hours",
+    "hours_value": "All week based on booking"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
