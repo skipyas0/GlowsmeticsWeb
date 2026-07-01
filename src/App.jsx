@@ -9,7 +9,7 @@ import ProcedureDetail from './pages/ProcedureDetail';
 
 function App() {
   return (
-    <Router basename="/GlowsmeticsWeb">
+    <Router>
       <div className="page-container">
         <Navbar />
         <main className="main-content">
