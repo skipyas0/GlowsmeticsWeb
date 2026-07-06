@@ -16,44 +16,170 @@
     "hydration_facial": {
       "title": "Hydration facial",
       "description": "Intensively hydrating cosmetic treatment with professional Korean cosmetics. Suitable for dehydrated, tired, or dull skin, restoring necessary hydration, softness, and natural glow. The products used and individual steps of the treatment are always adapted to the current state and needs of the skin.",
-      "price": "1290 CZK"
+      "price": "1290 CZK",
+      "pre_care": [
+        "If possible, come without makeup (not a requirement).",
+        "Do not use retinol, retinal, or exfoliating acids (AHA/BHA) 3-5 days prior if you have sensitive skin.",
+        "Inform me about any allergies, medications, or dermatological treatments."
+      ],
+      "post_care": [
+        "Avoid sauna, steam, pool, and intense sports for 24 hours.",
+        "Do not use retinoids or exfoliating acids for the first 24 hours.",
+        "Use hydrating care and SPF 30-50.",
+        "Provide your skin with plenty of hydration."
+      ],
+      "contraindications": [
+        "Fever or infectious diseases",
+        "Active cold sore",
+        "Open wounds or burns",
+        "Recent chemical peel or laser treatment",
+        "Recent botox or fillers (recommended interval as per doctor)",
+        "Known allergy to used products"
+      ]
     },
     "calm_restore_facial": {
       "title": "Calm & Restore Facial",
       "description": "Gentle cosmetic treatment with Korean cosmetics designed for sensitive, irritated, or reddened skin. It focuses on restoring the skin barrier, intensive soothing, and deep hydration. Ideal also for skin prone to sensitivity or after demanding home care. The products used and individual steps of the treatment are always adapted to the current state and needs of the skin.",
-      "price": "1290 CZK"
+      "price": "1290 CZK",
+      "pre_care": [
+        "If possible, come without makeup (not a requirement).",
+        "Inform me about your current skin condition and any dermatological treatments.",
+        "Do not use retinoids or strong exfoliants 3-5 days prior."
+      ],
+      "post_care": [
+        "Use gentle hydrating care.",
+        "Avoid sauna, pool, and intense sun for 24 hours.",
+        "Use SPF every day."
+      ],
+      "contraindications": [
+        "Active infection",
+        "Fever",
+        "Open wounds",
+        "Active herpes",
+        "Recent aesthetic procedures",
+        "Known allergy to used products"
+      ]
     },
     "korean_glow_facial": {
       "title": "Korean glow facial",
       "description": "Luxurious cosmetic treatment inspired by the Korean skincare philosophy. A combination of professional products, intensive hydration, and relaxing massage promotes a healthy, fresh, and naturally radiant appearance of the skin. Ideal before an important event or as regular care. The products used and individual steps of the treatment are always adapted to the current state and needs of the skin.",
-      "price": "1490 CZK"
+      "price": "1490 CZK",
+      "pre_care": [
+        "If possible, come without makeup (not a requirement).",
+        "Do not use retinoids or exfoliating acids at least 3-5 days prior.",
+        "Inform me about any aesthetic procedures or dermatological treatments."
+      ],
+      "post_care": [
+        "Avoid sun exposure and always use SPF.",
+        "Do not visit sauna or pool for the first 24 hours.",
+        "Do not use active ingredients (retinoids, acids) for 48 hours.",
+        "Follow the recommended home care."
+      ],
+      "contraindications": [
+        "Active infectious diseases",
+        "Fever",
+        "Active cold sore",
+        "Open wounds",
+        "Recent chemical peel or laser",
+        "Recent botox or fillers",
+        "Known allergy to used products"
+      ]
     },
     "brow_lamination_tint": {
       "title": "Brow Lamination with Tinting",
       "description": "Perfectly styled and tinted brows that frame your face beautifully.",
-      "price": "890 CZK"
+      "price": "890 CZK",
+      "pre_care": [
+        "You don't need to remove your brow makeup before the visit. It helps me see how you usually style it and what you prefer.",
+        "Do not peel around the eyebrows at least 24 hours prior.",
+        "Inform me about any allergies."
+      ],
+      "post_care": [
+        "Do not wet the brows for 24 hours.",
+        "Avoid sauna, steam, pool, and intense sweating.",
+        "Do not use oil products around the brows for the first day.",
+        "Regular brow nourishment is recommended."
+      ],
+      "contraindications": [
+        "Allergy to tints or used products",
+        "Eczema or dermatitis around the eyebrows",
+        "Open wounds",
+        "Infectious skin diseases",
+        "Significant skin irritation"
+      ]
     },
     "brow_lamination": {
       "title": "Brow Lamination",
       "description": "Long-lasting brow styling for a fuller, natural look.",
-      "price": "790 CZK"
+      "price": "790 CZK",
+      "pre_care": [
+        "You don't need to remove your brow makeup before the visit. It helps me see how you usually style it and what you prefer.",
+        "Do not peel around the eyebrows at least 24 hours prior.",
+        "Inform me about any allergies."
+      ],
+      "post_care": [
+        "Do not wet the brows for 24 hours.",
+        "Avoid sauna, steam, pool, and intense sweating.",
+        "Do not use oil products around the brows for the first day.",
+        "Regular brow nourishment is recommended."
+      ],
+      "contraindications": [
+        "Allergy to used products",
+        "Eczema or dermatitis around the eyebrows",
+        "Open wounds",
+        "Infectious skin diseases",
+        "Significant skin irritation"
+      ]
     },
     "korean_lash_lift": {
       "title": "Korean Lash Lift",
       "description": "Gentle lifting and curling of your natural lashes for an open, awakened look.",
-      "price": "990 CZK"
+      "price": "990 CZK",
+      "pre_care": [
+        "Come without mascara and eye makeup.",
+        "If you wear contact lenses, I recommend removing them before the treatment.",
+        "Inform me about eye sensitivity or allergies."
+      ],
+      "post_care": [
+        "Do not wet the lashes for 24 hours.",
+        "Avoid sauna, steam, and pool.",
+        "Do not use waterproof mascara for the first day.",
+        "Do not use an eyelash curler.",
+        "For longer lasting results, regular lash nourishment is recommended."
+      ],
+      "contraindications": [
+        "Inflammation of the eyes or eyelids",
+        "Stye",
+        "Infectious eye disease",
+        "Recent eye surgery or laser vision correction",
+        "Allergy to used products",
+        "Significantly irritated or watery eyes"
+      ]
     },
     "brow_lamination_tint_lash_lift": {
       "title": "Brow Lamination with Tinting + Lash Lift",
       "description": "A complete makeover for your eyes and brows.",
-      "price": "1590 CZK"
+      "price": "1590 CZK",
+      "pre_care": [
+        "If possible, come without eye makeup.",
+        "If you wear contact lenses, I recommend removing them before the treatment.",
+        "Inform me about allergies, eye sensitivity, or skin conditions."
+      ],
+      "post_care": [
+        "Do not wet the lashes or brows for the first 24 hours.",
+        "Avoid steam, sauna, pool, and intense sports.",
+        "Do not use oil products around the eyes and brows for the first day.",
+        "Regular nourishment for both lashes and brows is recommended."
+      ],
+      "contraindications": [
+        "All contraindications listed for both brow lamination and lash lifting apply."
+      ]
     },
     "detail": {
       "additional_info": "Additional Information",
       "pre_care": "Pre-care Instructions",
       "post_care": "Post-care Instructions",
-      "contraindications": "Contraindications",
-      "placeholder": "This information will be available soon."
+      "contraindications": "Contraindications"
     }
   },
   "contact": {

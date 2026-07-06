@@ -16,7 +16,7 @@ const About = () => {
             <p className="hero-description">{t('about.description')}</p>
             <div className="hero-actions">
               <Link to="/procedures" className="btn btn-outline">{t('nav.procedures')}</Link>
-              <a href="tel:+420732825839" className="btn btn-primary">{t('nav.book_now')}</a>
+              <a href="https://booking.reservanto.cz/Modal/?id=25208" target="_blank" rel="noopener noreferrer" className="btn btn-primary">{t('nav.book_now')}</a>
             </div>
           </div>
         </div>

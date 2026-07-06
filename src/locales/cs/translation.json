@@ -16,44 +16,170 @@
     "hydration_facial": {
       "title": "Hydratační ošetření pleti",
       "description": "Intenzivně hydratační kosmetické ošetření s profesionální korejskou kosmetikou. Je vhodné pro dehydratovanou, unavenou nebo mdlou pleť, které navrací potřebnou hydrataci, hebkost a přirozený jas. Použité produkty a jednotlivé kroky ošetření jsou vždy přizpůsobeny aktuálnímu stavu a potřebám pleti.",
-      "price": "1290 Kč"
+      "price": "1290 Kč",
+      "pre_care": [
+        "Pokud je to možné, přijďte bez make-upu (není podmínkou).",
+        "3–5 dní před ošetřením nepoužívejte retinol, retinal ani exfoliační kyseliny (AHA/BHA), pokud máte citlivou pleť.",
+        "Informujte mě o případných alergiích, užívaných lécích nebo dermatologické léčbě."
+      ],
+      "post_care": [
+        "Po dobu 24 hodin se vyhněte sauně, páře, bazénu a intenzivnímu sportu.",
+        "Prvních 24 hodin nepoužívejte retinoidy ani exfoliační kyseliny.",
+        "Používejte hydratační péči a SPF 30–50.",
+        "Dopřejte pleti dostatek hydratace."
+      ],
+      "contraindications": [
+        "Horečka nebo infekční onemocnění",
+        "Aktivní opar",
+        "Otevřené rány nebo popáleniny",
+        "Čerstvý chemický peeling nebo laserové ošetření",
+        "Čerstvý botox či výplně (doporučený odstup dle lékaře)",
+        "Známá alergie na použité přípravky"
+      ]
     },
     "calm_restore_facial": {
       "title": "Zklidňující ošetření pleti",
       "description": "Jemné kosmetické ošetření s korejskou kosmetikou určené pro citlivou, podrážděnou nebo začervenalou pleť. Zaměřuje se na obnovu kožní bariéry, intenzivní zklidnění a hloubkovou hydrataci. Ideální také pro pleť se sklonem k citlivosti nebo po náročnější domácí péči. Použité produkty a jednotlivé kroky ošetření jsou vždy přizpůsobeny aktuálnímu stavu a potřebám pleti.",
-      "price": "1290 Kč"
+      "price": "1290 Kč",
+      "pre_care": [
+        "Pokud je to možné, přijďte bez make-upu (není podmínkou).",
+        "Informujte mě o aktuálním stavu pleti a případné dermatologické léčbě.",
+        "3–5 dní před ošetřením nepoužívejte retinoidy ani silné exfoliační přípravky."
+      ],
+      "post_care": [
+        "Používejte jemnou hydratační péči.",
+        "Vyhněte se sauně, bazénu a intenzivnímu slunci po dobu 24 hodin.",
+        "Každý den používejte SPF."
+      ],
+      "contraindications": [
+        "Aktivní infekce",
+        "Horečka",
+        "Otevřené rány",
+        "Aktivní herpes",
+        "Čerstvé estetické zákroky",
+        "Známá alergie na použité přípravky"
+      ]
     },
     "korean_glow_facial": {
       "title": "Korean glow ošetření pleti",
       "description": "Luxusní kosmetické ošetření inspirované korejskou filozofií péče o pleť. Kombinace profesionálních produktů, intenzivní hydratace a relaxační masáže podporuje zdravý, svěží a přirozeně rozzářený vzhled pleti. Ideální před důležitou událostí i jako pravidelná péče. Použité produkty a jednotlivé kroky ošetření jsou vždy přizpůsobeny aktuálnímu stavu a potřebám pleti.",
-      "price": "1490 Kč"
+      "price": "1490 Kč",
+      "pre_care": [
+        "Pokud je to možné, přijďte bez make-upu (není podmínkou).",
+        "Nepoužívejte retinoidy ani exfoliační kyseliny alespoň 3–5 dní před návštěvou.",
+        "Informujte mě o případných estetických zákrocích nebo dermatologické léčbě."
+      ],
+      "post_care": [
+        "Vyhněte se slunci a vždy používejte SPF.",
+        "Prvních 24 hodin nenavštěvujte saunu ani bazén.",
+        "Nepoužívejte aktivní látky (retinoidy, kyseliny) po dobu 48 hodin.",
+        "Dodržujte doporučenou domácí péči."
+      ],
+      "contraindications": [
+        "Aktivní infekční onemocnění",
+        "Horečka",
+        "Aktivní opar",
+        "Otevřené rány",
+        "Čerstvý chemický peeling nebo laser",
+        "Čerstvý botox či výplně",
+        "Známá alergie na použité produkty"
+      ]
     },
     "brow_lamination_tint": {
       "title": "Laminace obočí s barvením",
       "description": "Dokonale upravené a nabarvené obočí, které krásně orámuje váš obličej.",
-      "price": "890 Kč"
+      "price": "890 Kč",
+      "pre_care": [
+        "Obočí si před návštěvou nemusíte odličovat. Naopak mi pomůže vidět, jak si ho běžně upravujete a jaký styl preferujete.",
+        "Alespoň 24 hodin předem neprovádějte peeling v okolí obočí.",
+        "Informujte mě o případných alergiích."
+      ],
+      "post_care": [
+        "Po dobu 24 hodin obočí nenamáčejte.",
+        "Vyhněte se sauně, páře, bazénu a intenzivnímu pocení.",
+        "Nepoužívejte olejové produkty v oblasti obočí první den.",
+        "Doporučuji pravidelnou výživu obočí."
+      ],
+      "contraindications": [
+        "Alergie na barvy nebo použité přípravky",
+        "Ekzém nebo dermatitida v oblasti obočí",
+        "Otevřené rány",
+        "Infekční onemocnění kůže",
+        "Výrazné podráždění pokožky"
+      ]
     },
     "brow_lamination": {
       "title": "Laminace obočí",
       "description": "Dlouhotrvající úprava obočí pro plnější a přirozený vzhled.",
-      "price": "790 Kč"
+      "price": "790 Kč",
+      "pre_care": [
+        "Obočí si před návštěvou nemusíte odličovat. Naopak mi pomůže vidět, jak si ho běžně upravujete a jaký styl preferujete.",
+        "Alespoň 24 hodin předem neprovádějte peeling v okolí obočí.",
+        "Informujte mě o případných alergiích."
+      ],
+      "post_care": [
+        "Po dobu 24 hodin obočí nenamáčejte.",
+        "Vyhněte se sauně, páře, bazénu a intenzivnímu pocení.",
+        "Nepoužívejte olejové produkty v oblasti obočí první den.",
+        "Doporučuji pravidelnou výživu obočí."
+      ],
+      "contraindications": [
+        "Alergie na použité přípravky",
+        "Ekzém nebo dermatitida v oblasti obočí",
+        "Otevřené rány",
+        "Infekční onemocnění kůže",
+        "Výrazné podráždění pokožky"
+      ]
     },
     "korean_lash_lift": {
       "title": "Korejský lifting řas",
       "description": "Šetrné natočení a zvýraznění přirozených řas pro otevřený a svěží pohled.",
-      "price": "990 Kč"
+      "price": "990 Kč",
+      "pre_care": [
+        "Přijďte bez řasenky a očního make-upu.",
+        "Pokud nosíte kontaktní čočky, doporučuji je před ošetřením vyjmout.",
+        "Informujte mě o citlivosti očí nebo alergiích."
+      ],
+      "post_care": [
+        "Po dobu 24 hodin řasy nenamáčejte.",
+        "Vyhněte se sauně, páře a bazénu.",
+        "Nepoužívejte voděodolnou řasenku první den.",
+        "Nepoužívejte kleštičky na řasy.",
+        "Pro delší výdrž doporučuji pravidelnou výživu řas."
+      ],
+      "contraindications": [
+        "Zánět očí nebo očních víček",
+        "Ječné zrno",
+        "Infekční onemocnění oka",
+        "Čerstvá operace oka nebo laserová korekce zraku",
+        "Alergie na použité přípravky",
+        "Výrazně podrážděné nebo slzící oči"
+      ]
     },
     "brow_lamination_tint_lash_lift": {
       "title": "Laminace obočí s barvením + Lifting řas",
       "description": "Kompletní proměna pro vaše oči a obočí.",
-      "price": "1590 Kč"
+      "price": "1590 Kč",
+      "pre_care": [
+        "Pokud je to možné, přijďte bez make-upu v oblasti očí.",
+        "Pokud nosíte kontaktní čočky, doporučuji je před ošetřením vyjmout.",
+        "Informujte mě o alergiích, citlivosti očí nebo kožních onemocněních."
+      ],
+      "post_care": [
+        "Prvních 24 hodin nenamáčejte řasy ani obočí.",
+        "Vyhněte se páře, sauně, bazénu a intenzivnímu sportu.",
+        "Nepoužívejte olejové produkty v okolí očí a obočí první den.",
+        "Doporučuji pravidelnou výživu řas i obočí."
+      ],
+      "contraindications": [
+        "Platí všechny kontraindikace uvedené pro laminaci obočí i lash lifting."
+      ]
     },
     "detail": {
       "additional_info": "Doplňující informace",
       "pre_care": "Před procedurou",
       "post_care": "Po proceduře",
-      "contraindications": "Kontraindikace",
-      "placeholder": "Tyto informace budou brzy k dispozici."
+      "contraindications": "Kontraindikace"
     }
   },
   "contact": {

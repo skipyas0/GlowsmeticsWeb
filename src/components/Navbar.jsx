@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Instagram } from 'lucide-react';
 import './Navbar.css';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logosimple.svg';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -33,7 +34,7 @@ const Navbar = () => {
 
         <div className="navbar-actions">
           <div className="language-switch">
-            <button 
+            <button
               className={`lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
               onClick={() => changeLanguage('en')}
             >
@@ -47,7 +48,10 @@ const Navbar = () => {
               🇨🇿 CZ
             </button>
           </div>
-          <a href="tel:+420732825839" className="btn btn-primary">{t('nav.book_now')}</a>
+          <a href="https://www.instagram.com/glowsmetics_prague/" target="_blank" rel="noopener noreferrer" className="nav-social" style={{ color: 'var(--color-text-muted)', display: 'flex', alignItems: 'center' }}>
+            <Instagram size={20} />
+          </a>
+          <a href="https://booking.reservanto.cz/Modal/?id=25208" target="_blank" rel="noopener noreferrer" className="btn btn-primary">{t('nav.book_now')}</a>
         </div>
       </div>
     </nav>
