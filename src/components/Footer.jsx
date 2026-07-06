@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './Footer.css';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logosimple.svg';
 
 const Footer = () => {
   const { t } = useTranslation();
