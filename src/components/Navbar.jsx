@@ -60,20 +60,25 @@ const Navbar = () => {
             </Link>
           </div>
           
-          <div className="language-switch mobile-only">
-            <button
-              className={`lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
-              onClick={() => changeLanguage('en')}
-            >
-              🇬🇧 EN
-            </button>
-            <span className="lang-divider">|</span>
-            <button 
-              className={`lang-btn ${i18n.language === 'cs' ? 'active' : ''}`}
-              onClick={() => changeLanguage('cs')}
-            >
-              🇨🇿 CZ
-            </button>
+          <div className="mobile-only" style={{ gap: '2rem', alignItems: 'center' }}>
+            <div className="language-switch">
+              <button
+                className={`lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
+                onClick={() => changeLanguage('en')}
+              >
+                🇬🇧 EN
+              </button>
+              <span className="lang-divider">|</span>
+              <button 
+                className={`lang-btn ${i18n.language === 'cs' ? 'active' : ''}`}
+                onClick={() => changeLanguage('cs')}
+              >
+                🇨🇿 CZ
+              </button>
+            </div>
+            <a href="https://www.instagram.com/glowsmetics_prague/" target="_blank" rel="noopener noreferrer" className="nav-social" style={{ color: 'var(--color-text-muted)', display: 'flex', alignItems: 'center' }}>
+              <InstagramIcon size={24} />
+            </a>
           </div>
         </div>
 
@@ -93,7 +98,7 @@ const Navbar = () => {
               🇨🇿 CZ
             </button>
           </div>
-          <a href="https://www.instagram.com/glowsmetics_prague/" target="_blank" rel="noopener noreferrer" className="nav-social" style={{ color: 'var(--color-text-muted)', display: 'flex', alignItems: 'center' }}>
+          <a href="https://www.instagram.com/glowsmetics_prague/" target="_blank" rel="noopener noreferrer" className="nav-social desktop-only" style={{ color: 'var(--color-text-muted)', display: 'flex', alignItems: 'center' }}>
             <InstagramIcon size={20} />
           </a>
           <a href="https://booking.reservanto.cz/Modal/?id=25208" target="_blank" rel="noopener noreferrer" className="btn btn-primary nav-book-btn">{t('nav.book_now')}</a>
