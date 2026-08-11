@@ -30,7 +30,7 @@ const Contact = () => {
           <div className="info-card glass">
             <Mail className="info-icon" />
             <h3>Email</h3>
-            <p><a href="mailto:info@glowsmetics.cz">{t('contact.email')}</a></p>
+            <p><a href="mailto:glowsmeticsprague@gmail.com">{t('contact.email')}</a></p>
           </div>
 
           <div className="info-card glass">
@@ -41,12 +41,12 @@ const Contact = () => {
         </div>
 
         <div className="contact-map glass">
-          <iframe 
-            src="https://maps.google.com/maps?q=Glowsmetics%20|%20Facials,%20Brows%20%26%20Lashes,%20Ve%20Smečkách%201258/6,%20110%2000%20Nové%20Město&t=&z=16&ie=UTF8&iwloc=&output=embed" 
-            width="100%" 
-            height="100%" 
-            style={{border:0}} 
-            allowFullScreen="" 
+          <iframe
+            src="https://maps.google.com/maps?q=Glowsmetics%20|%20Facials,%20Brows%20%26%20Lashes,%20Ve%20Smečkách%201258/6,%20110%2000%20Nové%20Město&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
             loading="lazy"
             title="Location Map"
           ></iframe>

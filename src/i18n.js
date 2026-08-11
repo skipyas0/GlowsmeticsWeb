@@ -13,11 +13,14 @@ const resources = {
   }
 };
 
+const userLang = navigator.language || navigator.userLanguage;
+const defaultLang = userLang.toLowerCase().startsWith('cs') ? 'cs' : 'en';
+
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'cs', // default language
+    lng: defaultLang, // default language based on device
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false 

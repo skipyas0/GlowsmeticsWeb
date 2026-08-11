@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Navbar.css';
@@ -12,35 +12,73 @@ const InstagramIcon = ({ size = 24 }) => (
   </svg>
 );
 
+const MenuIcon = ({ size = 24 }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <line x1="3" y1="12" x2="21" y2="12"></line>
+    <line x1="3" y1="6" x2="21" y2="6"></line>
+    <line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+);
+
+const XIcon = ({ size = 24 }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18"></line>
+    <line x1="6" y1="6" x2="18" y2="18"></line>
+  </svg>
+);
+
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    setIsMenuOpen(false); // Close menu on language change
   };
+
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <nav className="navbar glass">
       <div className="container navbar-container">
-        <Link to="/" className="navbar-logo">
+        <Link to="/" className="navbar-logo" onClick={closeMenu}>
           <img src={logo} alt="Glowsmetics" />
         </Link>
 
-        <div className="navbar-links">
-          <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>
-            {t('nav.about')}
-          </Link>
-          <Link to="/procedures" className={`nav-link ${location.pathname.startsWith('/procedures') ? 'active' : ''}`}>
-            {t('nav.procedures')}
-          </Link>
-          <Link to="/contact" className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}>
-            {t('nav.contact')}
-          </Link>
+        {/* Desktop Links & Mobile Menu Content */}
+        <div className={`navbar-menu-wrapper ${isMenuOpen ? 'open' : ''}`}>
+          <div className="navbar-links">
+            <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} onClick={closeMenu}>
+              {t('nav.about')}
+            </Link>
+            <Link to="/procedures" className={`nav-link ${location.pathname.startsWith('/procedures') ? 'active' : ''}`} onClick={closeMenu}>
+              {t('nav.procedures')}
+            </Link>
+            <Link to="/contact" className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} onClick={closeMenu}>
+              {t('nav.contact')}
+            </Link>
+          </div>
+          
+          <div className="language-switch mobile-only">
+            <button
+              className={`lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
+              onClick={() => changeLanguage('en')}
+            >
+              🇬🇧 EN
+            </button>
+            <span className="lang-divider">|</span>
+            <button 
+              className={`lang-btn ${i18n.language === 'cs' ? 'active' : ''}`}
+              onClick={() => changeLanguage('cs')}
+            >
+              🇨🇿 CZ
+            </button>
+          </div>
         </div>
 
         <div className="navbar-actions">
-          <div className="language-switch">
+          <div className="language-switch desktop-only">
             <button
               className={`lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
               onClick={() => changeLanguage('en')}
@@ -58,7 +96,10 @@ const Navbar = () => {
           <a href="https://www.instagram.com/glowsmetics_prague/" target="_blank" rel="noopener noreferrer" className="nav-social" style={{ color: 'var(--color-text-muted)', display: 'flex', alignItems: 'center' }}>
             <InstagramIcon size={20} />
           </a>
-          <a href="https://booking.reservanto.cz/Modal/?id=25208" target="_blank" rel="noopener noreferrer" className="btn btn-primary">{t('nav.book_now')}</a>
+          <a href="https://booking.reservanto.cz/Modal/?id=25208" target="_blank" rel="noopener noreferrer" className="btn btn-primary nav-book-btn">{t('nav.book_now')}</a>
+          <button className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
+            {isMenuOpen ? <XIcon size={24} /> : <MenuIcon size={24} />}
+          </button>
         </div>
       </div>
     </nav>
