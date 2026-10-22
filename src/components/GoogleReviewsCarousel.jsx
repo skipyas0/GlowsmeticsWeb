@@ -130,6 +130,8 @@ const GoogleReviewsCarousel = () => {
 
   if (!reviews || reviews.length === 0) return null;
 
+  const totalReviewsCount = cachedReviews.userRatingCount || cachedReviews.cs?.length || 26;
+
   // Link strictly to the review on the salon profile or to the salon reviews page (never to reviewer profile)
   const reviewLink =
     (currentReview?.googleMapsUri && currentReview.googleMapsUri.trim()) ||
