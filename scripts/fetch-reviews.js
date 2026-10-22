@@ -93,45 +93,84 @@ function normalizeRelativeTime(timeStr, targetLang) {
   }
 }
 
-// Unique key for deduplication
-function getReviewKey(review) {
-  if (review.googleMapsUri) return review.googleMapsUri;
-  const author = (review.authorName || '').trim().toLowerCase();
-  const snippet = (review.text || '').slice(0, 35).trim().toLowerCase();
-  return `${author}__${snippet}`;
+function normalizeAuthor(name) {
+  return (name || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .trim()
+    .toLowerCase();
 }
 
-// Merge and accumulate reviews: keeps all existing reviews and adds/updates new ones
-function mergeReviews(existingList = [], incomingList = []) {
-  const map = new Map();
-
-  for (const rev of existingList) {
-    if (rev && rev.authorName) {
-      map.set(getReviewKey(rev), rev);
-    }
+function getReviewIdentifiers(rev) {
+  const ids = [];
+  if (rev.authorUrl) {
+    const m = rev.authorUrl.match(/contrib\/(\d+)/);
+    if (m) ids.push(`contrib_${m[1]}`);
   }
+  if (rev.googleMapsUri) {
+    const m = rev.googleMapsUri.match(/!1s([^!]+)/);
+    if (m) ids.push(`uri_${m[1]}`);
+  }
+  if (rev.authorName) {
+    ids.push(`author_${normalizeAuthor(rev.authorName)}`);
+  }
+  return ids;
+}
 
-  for (const rev of incomingList) {
-    if (rev && rev.authorName) {
-      const key = getReviewKey(rev);
-      const existing = map.get(key);
-      if (existing) {
-        map.set(key, { ...existing, ...rev });
-      } else {
-        map.set(key, rev);
+// Merge and accumulate reviews: matches by contrib ID, review URI, or author name
+function mergeReviews(existingList = [], incomingList = []) {
+  const list = [];
+  const indexById = new Map();
+
+  function addOrUpdate(rev) {
+    if (!rev || !rev.authorName) return;
+    const ids = getReviewIdentifiers(rev);
+    let foundIndex = -1;
+    for (const id of ids) {
+      if (indexById.has(id)) {
+        foundIndex = indexById.get(id);
+        break;
+      }
+    }
+
+    if (foundIndex >= 0) {
+      const existing = list[foundIndex];
+      const merged = {
+        ...existing,
+        ...rev,
+        googleMapsUri: rev.googleMapsUri || existing.googleMapsUri || '',
+        authorUrl: rev.authorUrl || existing.authorUrl || '',
+        original: existing.original !== undefined ? existing.original : rev.original,
+        originalLang: existing.originalLang || rev.originalLang || 'cs',
+      };
+      list[foundIndex] = merged;
+      for (const id of getReviewIdentifiers(merged)) {
+        indexById.set(id, foundIndex);
+      }
+    } else {
+      const newIndex = list.length;
+      list.push(rev);
+      for (const id of ids) {
+        indexById.set(id, newIndex);
       }
     }
   }
 
-  const merged = Array.from(map.values());
-  merged.sort((a, b) => {
+  for (const rev of existingList) {
+    addOrUpdate(rev);
+  }
+  for (const rev of incomingList) {
+    addOrUpdate(rev);
+  }
+
+  list.sort((a, b) => {
     if (a.publishTime && b.publishTime) {
       return new Date(b.publishTime) - new Date(a.publishTime);
     }
     return 0;
   });
 
-  return merged;
+  return list;
 }
 
 async function fetchPlaceDetails(lang) {
@@ -246,11 +285,7 @@ async function main() {
       lastUpdated: new Date().toISOString(),
       displayName: csData.displayName?.text || existingCache.displayName || 'Glowsmetics',
       rating: csData.rating || existingCache.rating || 5.0,
-      userRatingCount: Math.max(
-        csData.userRatingCount || 0,
-        existingCache.userRatingCount || 0,
-        accumulatedCs.length
-      ),
+      userRatingCount: csData.userRatingCount || accumulatedCs.length,
       cs: accumulatedCs,
       en: accumulatedEn,
     };

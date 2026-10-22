@@ -130,12 +130,9 @@ const GoogleReviewsCarousel = () => {
 
   if (!reviews || reviews.length === 0) return null;
 
-  const totalReviewsCount = cachedReviews.userRatingCount || 26;
-
-  // Resilient link resolution: guarantees a valid Google Maps URL even if authorUrl or googleMapsUri is empty
+  // Link strictly to the review on the salon profile or to the salon reviews page (never to reviewer profile)
   const reviewLink =
     (currentReview?.googleMapsUri && currentReview.googleMapsUri.trim()) ||
-    (currentReview?.authorUrl && currentReview.authorUrl.trim()) ||
     GOOGLE_MAPS_PLACE_URL;
 
   return (
