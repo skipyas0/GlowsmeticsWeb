@@ -35,6 +35,15 @@
   font-weight: 500;
   color: var(--color-text);
   box-shadow: 0 2px 8px rgba(197, 160, 89, 0.08);
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.reviews-badge:hover {
+  background: rgba(197, 160, 89, 0.16);
+  border-color: var(--color-gold);
+  transform: translateY(-1px);
 }
 
 .reviews-badge-text {

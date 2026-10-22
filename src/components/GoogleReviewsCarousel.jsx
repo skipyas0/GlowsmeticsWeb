@@ -32,7 +32,8 @@ const FiveStars = () => (
 );
 
 // Direct link to Glowsmetics Reviews tab on Google Maps
-const GOOGLE_MAPS_PLACE_URL = 'https://www.google.com/maps/place/Glowsmetics/@50.0777994,14.4266736,17z/data=!4m8!3m7!1s0x470b9532fbe640c7:0x374423533b5360c!8m2!3d50.0777994!4d14.4266736!9m1!1b1';
+const GOOGLE_MAPS_PLACE_URL =
+  'https://www.google.com/maps/place/Glowsmetics+%7C+Kosmetika,+obo%C4%8D%C3%AD+%26+%C5%99asy/@50.0778427,14.4267507,712m/data=!3m1!1e3!4m8!3m7!1s0x470b9532fbe640c7:0x374423533b5360c!8m2!3d50.0778427!4d14.4267507!9m1!1b1!16s%2Fg%2F11z9jc0xtd?entry=ttu&g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D';
 
 const GoogleReviewsCarousel = () => {
   const { t, i18n } = useTranslation();
@@ -132,21 +133,22 @@ const GoogleReviewsCarousel = () => {
 
   const totalReviewsCount = cachedReviews.userRatingCount || cachedReviews.cs?.length || 26;
 
-  // Link strictly to the review on the salon profile or to the salon reviews page (never to reviewer profile)
-  const reviewLink =
-    (currentReview?.googleMapsUri && currentReview.googleMapsUri.trim()) ||
-    GOOGLE_MAPS_PLACE_URL;
-
   return (
     <section className="reviews-carousel-section" aria-label="Customer Reviews">
       <div className="reviews-header">
         <h2 className="reviews-heading">{t('reviews.heading')}</h2>
-        <div className="reviews-badge">
+        <a
+          href={GOOGLE_MAPS_PLACE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="reviews-badge"
+          title={currentLang === 'cs' ? 'Zobrazit recenze na Google' : 'View reviews on Google'}
+        >
           <GoogleIcon size={18} />
           <span className="reviews-badge-text">
             5.0 ★ ({totalReviewsCount} {currentLang === 'cs' ? 'recenzí na Google' : 'Google reviews'})
           </span>
-        </div>
+        </a>
       </div>
 
       <div
@@ -229,7 +231,7 @@ const GoogleReviewsCarousel = () => {
         </div>
 
         <a
-          href={reviewLink}
+          href={GOOGLE_MAPS_PLACE_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="google-maps-link"
