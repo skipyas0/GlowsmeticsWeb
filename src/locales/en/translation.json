@@ -195,5 +195,12 @@
   },
   "footer": {
     "rights": "All rights reserved."
+  },
+  "reviews": {
+    "heading": "What the customers say",
+    "subheading": "Google Maps 5.0 ★ Reviews",
+    "view_on_google": "View all reviews on Google Maps",
+    "google_rating": "5.0 rating on Google",
+    "verified_review": "Verified Google Review"
   }
 }

@@ -195,5 +195,12 @@
   },
   "footer": {
     "rights": "Všechna práva vyhrazena."
+  },
+  "reviews": {
+    "heading": "Co říkají zákazníci",
+    "subheading": "Hodnocení 5.0 ★ na Google Maps",
+    "view_on_google": "Zobrazit všechny recenze na Google Maps",
+    "google_rating": "Hodnocení 5.0 na Google",
+    "verified_review": "Ověřená Google recenze"
   }
 }

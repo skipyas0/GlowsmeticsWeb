@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import GoogleReviewsCarousel from '../components/GoogleReviewsCarousel';
 import './About.css';
 
 const About = () => {
@@ -18,6 +19,8 @@ const About = () => {
               <Link to="/procedures" className="btn btn-outline">{t('nav.procedures')}</Link>
               <a href="https://booking.reservanto.cz/Modal/?id=25208" target="_blank" rel="noopener noreferrer" className="btn btn-primary">{t('nav.book_now')}</a>
             </div>
+
+            <GoogleReviewsCarousel />
           </div>
         </div>
       </section>

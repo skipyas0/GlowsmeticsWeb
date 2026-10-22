@@ -2,13 +2,16 @@
   /* Soft gradient background to give a premium feel */
   background: radial-gradient(circle at top right, rgba(197, 160, 89, 0.05), transparent 40%),
               radial-gradient(circle at bottom left, rgba(197, 160, 89, 0.05), transparent 40%);
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 95px);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 3rem 0 5rem;
 }
 
 .hero {
-  padding: 4rem 0;
+  padding: 1rem 0;
   width: 100%;
 }
 
@@ -18,7 +21,8 @@
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 860px;
+  width: 100%;
   text-align: center;
 }
 
@@ -56,10 +60,22 @@
 }
 
 @media (max-width: 768px) {
+  .about-page {
+    padding: 1.5rem 0 3.5rem;
+  }
+  .hero {
+    padding: 1rem 0;
+  }
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-description {
     font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 2rem;
   }
 }
