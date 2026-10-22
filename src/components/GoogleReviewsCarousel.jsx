@@ -31,19 +31,46 @@ const FiveStars = () => (
   </div>
 );
 
-const GOOGLE_MAPS_SEARCH_URL = 'https://www.google.com/maps/search/?api=1&query=Glowsmetics%20Facials,%20Brows%20%26%20Lashes%20Ve%20Sme%C4%8Dk%C3%A1ch%201258/6%20Praha';
+// Direct link to Glowsmetics Reviews tab on Google Maps
+const GOOGLE_MAPS_PLACE_URL = 'https://www.google.com/maps/place/Glowsmetics/@50.0777994,14.4266736,17z/data=!4m8!3m7!1s0x470b9532fbe640c7:0x374423533b5360c!8m2!3d50.0777994!4d14.4266736!9m1!1b1';
 
 const GoogleReviewsCarousel = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language?.startsWith('cs') ? 'cs' : 'en';
 
-  const reviews = cachedReviews[currentLang] || cachedReviews.cs || [];
+  // 1. On page load, select 5 random 5-star reviews with non-empty text.
+  // Storing indices ensures the SAME 5 reviews stay selected when toggling between CS and EN!
+  const [selectedIndices] = useState(() => {
+    const pool = cachedReviews.cs || [];
+    const validIndices = [];
+
+    for (let i = 0; i < pool.length; i++) {
+      const r = pool[i];
+      if (r && r.rating === 5 && r.text && r.text.trim().length > 0) {
+        validIndices.push(i);
+      }
+    }
+
+    // Shuffle using Fisher-Yates
+    for (let i = validIndices.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [validIndices[i], validIndices[j]] = [validIndices[j], validIndices[i]];
+    }
+
+    return validIndices.slice(0, 5);
+  });
+
+  const allReviewsForLang = cachedReviews[currentLang] || cachedReviews.cs || [];
+  const reviews = selectedIndices
+    .map((idx) => allReviewsForLang[idx])
+    .filter((r) => r && r.rating === 5 && r.text && r.text.trim().length > 0);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [touchStartX, setTouchStartX] = useState(null);
   const [imageErrors, setImageErrors] = useState({});
 
-  // Reset to first slide if current index is out of bounds on language change
+  // Reset index if out of bounds
   useEffect(() => {
     if (currentIndex >= reviews.length) {
       setCurrentIndex(0);
@@ -51,10 +78,12 @@ const GoogleReviewsCarousel = () => {
   }, [reviews.length, currentIndex]);
 
   const nextSlide = useCallback(() => {
+    if (reviews.length <= 1) return;
     setCurrentIndex((prev) => (prev + 1) % reviews.length);
   }, [reviews.length]);
 
   const prevSlide = useCallback(() => {
+    if (reviews.length <= 1) return;
     setCurrentIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
   }, [reviews.length]);
 
@@ -83,8 +112,8 @@ const GoogleReviewsCarousel = () => {
     setTouchStartX(null);
   };
 
-  const handleImageError = (index) => {
-    setImageErrors((prev) => ({ ...prev, [index]: true }));
+  const handleImageError = (key) => {
+    setImageErrors((prev) => ({ ...prev, [key]: true }));
   };
 
   const currentReview = reviews[currentIndex] || reviews[0];
@@ -102,6 +131,12 @@ const GoogleReviewsCarousel = () => {
   if (!reviews || reviews.length === 0) return null;
 
   const totalReviewsCount = cachedReviews.userRatingCount || 26;
+
+  // Resilient link resolution: guarantees a valid Google Maps URL even if authorUrl or googleMapsUri is empty
+  const reviewLink =
+    (currentReview?.googleMapsUri && currentReview.googleMapsUri.trim()) ||
+    (currentReview?.authorUrl && currentReview.authorUrl.trim()) ||
+    GOOGLE_MAPS_PLACE_URL;
 
   return (
     <section className="reviews-carousel-section" aria-label="Customer Reviews">
@@ -195,7 +230,7 @@ const GoogleReviewsCarousel = () => {
         </div>
 
         <a
-          href={currentReview?.googleMapsUri || GOOGLE_MAPS_SEARCH_URL}
+          href={reviewLink}
           target="_blank"
           rel="noopener noreferrer"
           className="google-maps-link"
