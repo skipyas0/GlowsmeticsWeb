@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-10-25T08:47:47.851Z",
+  "lastUpdated": "2026-10-26T09:27:43.785Z",
   "displayName": "Glowsmetics | Kosmetika, obočí & řasy",
   "rating": 5,
-  "userRatingCount": 26,
+  "userRatingCount": 27,
   "cs": [
     {
       "authorName": "Karolina Soralova",
@@ -137,6 +137,18 @@
       "originalLang": "cs"
     },
     {
+      "authorName": "Monika Zimová",
+      "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocLZzCue76_EM_FDORcaNOPcuQA1CvVg-O-Tx_OHzZ5kto5Diw=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "Naprostá spokojenost! Krásně provedená laminace, nádherný přirozený výsledek a k tomu velmi milý a příjemný přístup.Moc děkuji a ráda se vrátím.",
+      "relativeTime": "před měsícem",
+      "authorUrl": "https://www.google.com/maps/contrib/110436485107410005969/reviews",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21WMmEwc3RZM0pJY1U1b01reENTR2hsUWtodFdtYxAB!2m1!1s0x470b9532fbe640c7:0x374423533b5360c",
+      "publishTime": "2026-09-20T09:50:51.427136789Z",
+      "original": true,
+      "originalLang": "cs"
+    },
+    {
       "authorName": "Nina Moravčíková",
       "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocJg4TEvbq0u7b4hLzi1hc8MkssTEgaZbAClTeUL4PnEzKb2_ng=s128-c0x00000000-cc-rp-mo",
       "rating": 5,
@@ -145,18 +157,6 @@
       "authorUrl": "https://www.google.com/maps/contrib/103886919530152250451/reviews",
       "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xGNVZUbFhNVFp3UlZjeWVGbDZiVWxCWmxVME1uYxAB!2m1!1s0x470b9532fbe640c7:0x374423533b5360c",
       "publishTime": "2026-09-18T20:15:15.893302531Z",
-      "original": true,
-      "originalLang": "cs"
-    },
-    {
-      "authorName": "Monika Zimová",
-      "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocLZzCue76_EM_FDORcaNOPcuQA1CvVg-O-Tx_OHzZ5kto5Diw=w120-h120-p-rp-mo-br100",
-      "rating": 5,
-      "text": "Naprostá spokojenost! Krásně provedená laminace, nádherný přirozený výsledek a k tomu velmi milý a příjemný přístup. Moc děkuji a ráda se vrátím.",
-      "relativeTime": "před měsícem",
-      "authorUrl": "https://www.google.com/maps/contrib/110436485107410005969/reviews",
-      "googleMapsUri": "",
-      "publishTime": "2026-09-18T12:00:00.000Z",
       "original": true,
       "originalLang": "cs"
     },
@@ -297,7 +297,7 @@
       "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocJ_eOs3mRQ8vmXlaSyA_Ma4icchdtCV6hg559Yu01AWWyhazg=s128-c0x00000000-cc-rp-mo",
       "rating": 5,
       "text": "Moje obočí a oči vypadají úžasně ❤️ naprosto doporučuju, moc spokojená s výsledkem!",
-      "relativeTime": "před 2 měsíci",
+      "relativeTime": "před 3 měsíci",
       "authorUrl": "https://www.google.com/maps/contrib/109477125635401244925/reviews",
       "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xnNVJIQkNYM2t4YkRsUVIwd3RhbXRoVldKRk0wRRAB!2m1!1s0x470b9532fbe640c7:0x374423533b5360c",
       "publishTime": "2026-07-28T08:43:11.855012153Z",
@@ -611,7 +611,7 @@
       "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocJ_eOs3mRQ8vmXlaSyA_Ma4icchdtCV6hg559Yu01AWWyhazg=s128-c0x00000000-cc-rp-mo",
       "rating": 5,
       "text": "My eyebrows and eyes look amazing ❤️ I totally recommend it, very happy with the result!",
-      "relativeTime": "2 months ago",
+      "relativeTime": "3 months ago",
       "authorUrl": "https://www.google.com/maps/contrib/109477125635401244925/reviews",
       "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xnNVJIQkNYM2t4YkRsUVIwd3RhbXRoVldKRk0wRRAB!2m1!1s0x470b9532fbe640c7:0x374423533b5360c",
       "publishTime": "2026-07-28T08:43:11.855012153Z",
