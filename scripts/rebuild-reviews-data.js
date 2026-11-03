@@ -7,6 +7,14 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 const outputFile = path.join(rootDir, 'src', 'data', 'reviews.json');
 
+// This script replaces reviews.json completely, dropping any reviews added since by the
+// daily fetch. Require --force so it can't be run by accident.
+if (fs.existsSync(outputFile) && !process.argv.includes('--force')) {
+  console.error('❌ src/data/reviews.json already exists and would be overwritten.');
+  console.error('   Run with --force to replace it: node scripts/rebuild-reviews-data.js --force');
+  process.exit(1);
+}
+
 const REVIEWS_DATA = [
   {
     authorName: 'Nikola Satrapova',

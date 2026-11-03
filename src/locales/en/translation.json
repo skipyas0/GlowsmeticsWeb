@@ -179,8 +179,12 @@
       "additional_info": "Additional Information",
       "pre_care": "Pre-care Instructions",
       "post_care": "Post-care Instructions",
-      "contraindications": "Contraindications"
-    }
+      "contraindications": "Contraindications",
+      "about": "About the Treatment",
+      "back": "Back to all services",
+      "not_found": "Procedure not found"
+    },
+    "view_details": "View Details"
   },
   "contact": {
     "title": "Contact Us",
@@ -201,6 +205,8 @@
     "subheading": "Google Maps 5.0 ★ Reviews",
     "view_on_google": "View all reviews on Google Maps",
     "google_rating": "5.0 rating on Google",
-    "verified_review": "Verified Google Review"
+    "verified_review": "Verified Google Review",
+    "badge": "{{rating}} ★ ({{count}} Google reviews)",
+    "badge_title": "View reviews on Google"
   }
 }

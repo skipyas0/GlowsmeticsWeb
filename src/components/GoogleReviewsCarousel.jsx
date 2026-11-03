@@ -131,7 +131,8 @@ const GoogleReviewsCarousel = () => {
 
   if (!reviews || reviews.length === 0) return null;
 
-  const totalReviewsCount = cachedReviews.userRatingCount || cachedReviews.cs?.length || 26;
+  const totalReviewsCount = cachedReviews.userRatingCount || cachedReviews.cs?.length || 0;
+  const averageRating = (cachedReviews.rating || 5).toFixed(1);
 
   return (
     <section className="reviews-carousel-section" aria-label="Customer Reviews">
@@ -142,11 +143,11 @@ const GoogleReviewsCarousel = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="reviews-badge"
-          title={currentLang === 'cs' ? 'Zobrazit recenze na Google' : 'View reviews on Google'}
+          title={t('reviews.badge_title')}
         >
           <GoogleIcon size={18} />
           <span className="reviews-badge-text">
-            5.0 ★ ({totalReviewsCount} {currentLang === 'cs' ? 'recenzí na Google' : 'Google reviews'})
+            {t('reviews.badge', { rating: averageRating, count: totalReviewsCount })}
           </span>
         </a>
       </div>
