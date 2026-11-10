@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-09T12:17:24.177Z",
+  "lastUpdated": "2026-11-10T11:55:26.958Z",
   "displayName": "Glowsmetics | Kosmetika, obočí & řasy",
   "rating": 5,
   "userRatingCount": 27,
@@ -53,18 +53,6 @@
       "originalLang": "cs"
     },
     {
-      "authorName": "Nikola Mrázová",
-      "profilePhoto": "https://lh3.googleusercontent.com/a-/ALV-UjWN2kizPnZLXwyiFYANDGvk31Mi7K5Gdes7wFB_bESmFl-WBc0F-g=w120-h120-p-rp-mo-ba12-br100",
-      "rating": 5,
-      "text": "Slečnu mohu jedině doporučit, je sympatická a pečlivá. Byla jsem u ní jak na lash liftingu, tak na kosmetice a jsem moc spokojená. 😊",
-      "relativeTime": "před 2 týdny",
-      "authorUrl": "https://www.google.com/maps/contrib/109933651997593212416/reviews",
-      "googleMapsUri": "",
-      "publishTime": "2026-10-05T12:00:00.000Z",
-      "original": true,
-      "originalLang": "cs"
-    },
-    {
       "authorName": "Tereza Hálová",
       "profilePhoto": "https://lh3.googleusercontent.com/a-/ALV-UjUzAlNR4CmSnE_Lh_zRYFyneEFjJX5a0tsxLtvO2TMs0F2Ko7ch=s128-c0x00000000-cc-rp-mo",
       "rating": 5,
@@ -73,6 +61,18 @@
       "authorUrl": "https://www.google.com/maps/contrib/116177830000916659880/reviews",
       "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21ka09YSnBYMlp2VWtsSmFUUjVlR2hzVVhGUlEwRRAB!2m1!1s0x470b9532fbe640c7:0x374423533b5360c",
       "publishTime": "2026-10-01T19:04:58.940309727Z",
+      "original": true,
+      "originalLang": "cs"
+    },
+    {
+      "authorName": "Nikola Mrázová",
+      "profilePhoto": "https://lh3.googleusercontent.com/a-/ALV-UjWN2kizPnZLXwyiFYANDGvk31Mi7K5Gdes7wFB_bESmFl-WBc0F-g=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "text": "Slečnu mohu jedině doporučit, je sympatická a pečlivá. Byla jsem u ní jak na lash liftingu, tak na kosmetice a jsem moc spokojená.😊",
+      "relativeTime": "před měsícem",
+      "authorUrl": "https://www.google.com/maps/contrib/109933651997593212416/reviews",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT204NVNFTTVRa2hFVVZaVE9WaExaMjVYVFVrelFtYxAB!2m1!1s0x470b9532fbe640c7:0x374423533b5360c",
+      "publishTime": "2026-10-01T15:00:09.889025649Z",
       "original": true,
       "originalLang": "cs"
     },
@@ -415,18 +415,6 @@
       "originalLang": "cs"
     },
     {
-      "authorName": "Viktorie Martináková",
-      "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocJlFnZ7j0HcEa1CDgt5YJNg9Zg88bVtEWQq14wHFUuBOxwcgw=w120-h120-p-rp-mo-br100",
-      "rating": 5,
-      "text": "Everything went smoothly, the approach was very pleasant, and overall I felt wonderful. I am truly satisfied with the result. Highly recommended! 😊",
-      "relativeTime": "3 weeks ago",
-      "authorUrl": "https://www.google.com/maps/contrib/112296025271454271345/reviews",
-      "googleMapsUri": "",
-      "publishTime": "2026-09-29T12:00:00.000Z",
-      "original": false,
-      "originalLang": "cs"
-    },
-    {
       "authorName": "Lucie Koudelova",
       "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocJk1pV6qUih9oCaZa8N9hBE0KuBl80l99-cJPNL94PGue0y4A=w120-h120-p-rp-mo-br100",
       "rating": 5,
@@ -435,6 +423,18 @@
       "authorUrl": "https://www.google.com/maps/contrib/109597501565087048788/reviews",
       "googleMapsUri": "",
       "publishTime": "2026-09-28T12:00:00.000Z",
+      "original": false,
+      "originalLang": "cs"
+    },
+    {
+      "authorName": "Viktorie Martináková",
+      "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocJlFnZ7j0HcEa1CDgt5YJNg9Zg88bVtEWQq14wHFUuBOxwcgw=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "Everything went well, the approach was very pleasant and overall I felt very good. I am really satisfied with the result. I highly recommend it!😊",
+      "relativeTime": "a month ago",
+      "authorUrl": "https://www.google.com/maps/contrib/112296025271454271345/reviews",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25KblJVWkxTRVZ3TFVKMlgyOVRhWGhDY0hsd2FsRRAB!2m1!1s0x470b9532fbe640c7:0x374423533b5360c",
+      "publishTime": "2026-09-25T09:06:41.991586730Z",
       "original": false,
       "originalLang": "cs"
     },
