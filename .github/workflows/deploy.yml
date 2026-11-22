@@ -4,9 +4,11 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main", "master"]
-  # Runs daily at 04:00 UTC to refresh Google reviews and redeploy
+  # Runs daily to refresh Google reviews and redeploy.
+  # Cron is always UTC: 02:23 UTC = 03:23 Prague winter time (CET) / 04:23 summer (CEST).
+  # Off-the-hour minute on purpose: GitHub delays top-of-hour schedules the most.
   schedule:
-    - cron: '0 4 * * *'
+    - cron: '23 2 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -22,11 +24,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just building and deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -62,6 +60,15 @@ jobs:
         with:
           path: './dist'
 
+  # Separate job so the uploaded artifact is visible to the API before deploy looks it up
+  # (same-job upload+deploy can race and fail with "No artifacts named github-pages").
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
