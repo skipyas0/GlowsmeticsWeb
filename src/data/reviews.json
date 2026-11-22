@@ -1,9 +1,21 @@
 {
-  "lastUpdated": "2026-11-21T11:53:18.327Z",
+  "lastUpdated": "2026-11-22T12:06:23.758Z",
   "displayName": "Glowsmetics | Kosmetika, obočí & řasy",
   "rating": 5,
   "userRatingCount": 28,
   "cs": [
+    {
+      "authorName": "Nina Kamanová",
+      "profilePhoto": "https://lh3.googleusercontent.com/a-/ALV-UjWpbcGl1oDVFkd6Tcd4kqspU64UspqZztPg5JQGc-Bo9QzfRE7WYw=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "Moc milá a šikovná slečna! Obočí a řasy vypadají krásně. 💕\n\nNebyla jsem naposledy.😊",
+      "relativeTime": "před týdnem",
+      "authorUrl": "https://www.google.com/maps/contrib/103981672489329902266/reviews",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25GQmRrTk9RM05IY2xwMWRWWnVaMWhTYVdGSVQyYxAB!2m1!1s0x470b9532fbe640c7:0x374423533b5360c",
+      "publishTime": "2026-11-11T10:04:15.721214047Z",
+      "original": true,
+      "originalLang": "cs"
+    },
     {
       "authorName": "Karolina Soralova",
       "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocJ5adgIW1DijRegvR8JE4sDK2YRoOI3gwJGYQsCGdtwqAGMgA=w120-h120-p-rp-mo-ba12-br100",
@@ -318,6 +330,18 @@
     }
   ],
   "en": [
+    {
+      "authorName": "Nina Kamanová",
+      "profilePhoto": "https://lh3.googleusercontent.com/a-/ALV-UjWpbcGl1oDVFkd6Tcd4kqspU64UspqZztPg5JQGc-Bo9QzfRE7WYw=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "Very nice and skilled lady! Eyebrows and eyelashes look beautiful. 💕\n\nI was not the last time.😊",
+      "relativeTime": "a week ago",
+      "authorUrl": "https://www.google.com/maps/contrib/103981672489329902266/reviews",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25GQmRrTk9RM05IY2xwMWRWWnVaMWhTYVdGSVQyYxAB!2m1!1s0x470b9532fbe640c7:0x374423533b5360c",
+      "publishTime": "2026-11-11T10:04:15.721214047Z",
+      "original": false,
+      "originalLang": "cs"
+    },
     {
       "authorName": "Karolina Soralova",
       "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocJ5adgIW1DijRegvR8JE4sDK2YRoOI3gwJGYQsCGdtwqAGMgA=w120-h120-p-rp-mo-ba12-br100",
